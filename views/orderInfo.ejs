@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sample Site</title>
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <style>
+            body { padding-top:50px; }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.8.0/JsBarcode.all.js"></script>
+        
+    </head>
+<body>
+  <svg class="barcode" jsbarcode-format="upc" jsbarcode-value=<%= loyalty %> jsbarcode-textmargin="0" jsbarcode-fontoptions="bold">
+</svg>
+</body>
+<script>
+    JsBarcode(".barcode").init();
+
+</script>
+</html>
