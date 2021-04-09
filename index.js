@@ -5,6 +5,7 @@ const path = require('path');
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.static('assets'))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
